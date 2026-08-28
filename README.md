@@ -1,2 +1,6 @@
 # Hyprland-new-dots
 yapi>> it`s new repository my hyprland dotfiles > i hat to delete old repository because it was total crap....
+
+
+
+i`ll update it someday////..././.,,/,
