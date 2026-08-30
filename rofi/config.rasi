@@ -1,0 +1,85 @@
+@import "~/.cache/wal/colors-rofi-dark.rasi"
+
+* {
+    bg-module:        #000000cc;
+    white:            #ffffff;
+    gray:             #666666;
+    background-color: transparent;
+    text-color:       @foreground;
+    font:             "JetBrains Mono 11";
+}
+
+window {
+    location: center;
+    anchor: center;
+    width: 600px;
+    background-color: transparent;
+    enabled: true;
+}
+
+mainbox {
+    enabled: true;
+    spacing: 2px;
+    background-color: transparent;
+    children: [ "inputbar", "listview" ];
+}
+
+inputbar {
+    enabled: true;
+    padding: 20px 25px;
+    background-color: @bg-module;
+    border-radius: 12px;
+    children: [ "prompt", "entry" ];
+}
+
+prompt {
+    enabled: true;
+    text-color: @white;
+    font: "JetBrains Mono Bold 12";
+}
+
+entry {
+    enabled: true;
+    placeholder: "Execute command...";
+    placeholder-color: @gray;
+}
+
+listview {
+    enabled: true;
+    columns: 1;
+    lines: 7;
+    cycle: true;
+    dynamic: true;
+    scrollbar: false;
+    layout: vertical;
+    fixed-height: false;
+    spacing: 5px;
+    margin: 5px;
+    padding: 15px;
+    background-color: @bg-module;
+    border-radius: 12px;
+}
+
+element {
+    enabled: true;
+    spacing: 15px;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+element selected.normal {
+    background-color: transparent;
+    text-color: @white;
+}
+
+element-icon {
+    size: 24px;
+    cursor: inherit;
+}
+
+element-text {
+    vertical-align: 0.5;
+    cursor: inherit;
+    text-color: inherit;
+}

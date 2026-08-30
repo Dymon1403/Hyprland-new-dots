@@ -1,0 +1,59 @@
+{
+    "layer": "left",
+    "position": "top",
+    "margin-top": 5,
+    "margin-left": 10,
+    "margin-right": 10,
+    "spacing": 4,
+
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["mpris", "clock"],
+    "modules-right": ["tray", "temperature", "cpu", "network"],
+
+         "hyprland/workspaces": {
+    "format": "{name}",
+    "on-click": "activate"
+        
+    },
+
+    "clock": {
+        "format": "  {:%H:%M}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+
+         "tray": {
+        "spacing": 10
+    },
+
+    "cpu": {
+        "format": " {usage}%",
+        "interval": 2
+    },
+
+    "temperature": {
+        "critical-threshold": 80,
+        "format": "{icon} {temperatureC}°C",
+        "format-icons": ["", "", ""]
+    },
+     "mpris": {
+        "format": "{artist} - {title}",
+        "format-paused": "<i>{artist} - {title}</i>",
+        "max-length": 50,
+        "ellipsis": "...",
+        "status-icons": {
+            "paused": " "
+        },
+        "on-click": "playerctl play-pause",
+        "on-click-right": "playerctl next",
+        "on-scroll-up": "playerctl next",
+        "on-scroll-down": "playerctl previous"
+    },
+     "network": {
+    "format-wifi": "  {essid}",
+    "format-ethernet": "󰈀  {ifname}",
+    "format-linked": "󰈀  {ifname} (No IP)",
+    "format-disconnected": "󰈂  Disconnected",
+    "tooltip-format": "{ifname} via {gwaddr} ",
+    "on-click": "nm-connection-editor" 
+    },
+}    

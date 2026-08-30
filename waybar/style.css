@@ -1,0 +1,103 @@
+@import "/home/dmitrj/.cache/wal/colors-waybar.css";
+
+* {
+    font-family: "JetBrainsMono Nerd Font", "Roboto", "Helvetica",  "sans-serif";
+    font-size: 13px;
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+}
+
+window#waybar {
+    background: transparent;
+}
+#mpris, #workspaces, #clock, #tray, #cpu, #memory, #temperature{
+    font-family: "JetBrainsMono Nerd Font", "Symbols Nerd Font Mono", sans-serif; /* ДОБАВЬ ЭТО */
+    background: rgba(20, 20, 20, 0.7);
+    color: @color7;
+    border: 2px solid @color4;
+    border-radius: 5px;
+    padding: 0px 15px;
+    margin: 5px 3px;
+}
+#mpris, #workspaces, #clock, #tray, #cpu, #memory, #temperature{
+    background: rgba(20, 20, 20, 0.7); /* Полупрозрачный фон */
+    color: @color7;                   /* Цвет текста из темы */
+    border: 2px solid @color4;         /* Цвет рамки из темы */
+    border-radius: 5px;
+    padding: 0px 15px;
+    margin: 5px 3px;
+}
+ #workspaces button {
+    padding: 0 12px;
+    margin: 4px 4px;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: @color7;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    
+    /* Анимация: 0.4 секунды, мягкий переход (ease-in-out) */
+    transition: all 0.4s cubic-bezier(.55,-0.04,.3,1.44);
+}
+
+#workspaces button.active {
+    background-color: @color4;
+    color: @background;
+    border: 2px solid @color4;
+    min-width: 40px; /* Немного расширяем активную кнопку для эффекта */
+}
+
+#workspaces button:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    box-shadow: inherit;
+    text-shadow: inherit;
+}
+
+#workspaces button {
+    min-width: 30px;
+
+}
+
+#temperature.critical {
+    background-color: #f38ba8; /* Красный, если перегрев */
+    color: #1e1e2e;
+}
+
+#mpris {
+    background-color: rgba(20, 20, 20, 0.7);
+    color: @color7;                       
+    border: 2px solid @color4;               
+    border-radius: 5px;                   
+    padding: 0 15px;
+    margin: 4px 10px;  
+    font-weight: bold;
+}
+
+#mpris.paused {
+    color: @color7;
+    border-color: @color7;
+}
+#custom-player-cava {
+    background: rgba(20, 20, 20, 0.7);
+    color: @color7;
+    border: 2px solid @color4;
+    border-radius: 5px;
+    padding: 0 15px;
+    margin: 4px 10px;
+    font-weight: bold;
+    min-width: 300px;
+}
+#network {
+    background-color: rgba(20, 20, 20, 0.7);
+    color: @color7;        
+    border: 2px solid @color4; 
+    border-radius: 5px;
+    padding: 0 15px;
+    margin: 4px 10px;
+}
+
+/* Если хочешь, чтобы при наведении он чуть подсвечивался */
+#network:hover {
+    background-color: @background;
+    color: @color7;
+}
