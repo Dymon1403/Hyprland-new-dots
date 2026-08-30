@@ -3,7 +3,7 @@ yapi>> it`s new repository my hyprland dotfiles > i hat to delete old repository
 
 
 
-i`ll update it someday////..././.,,/,
+i`ll update it someday////..././.,,/,^^^^^^^^
 
 
 
