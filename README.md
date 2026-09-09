@@ -1,5 +1,5 @@
 # Hyprland-new-dots
-yapi>> it`s new repository my hyprland dotfiles > i hat to delete old repository because it was total crap....
+yapi>> it`s new repository my hyprland dotfiles > i had to delete old repository because it was outdated....
 
 
 
